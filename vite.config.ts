@@ -5,6 +5,13 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/GridWars/',
+  define: {
+    'process.env': {},
+  },
+  build: {
+    target: 'esnext',
+  },
   plugins: [vue()],
   resolve: {
     alias: {
